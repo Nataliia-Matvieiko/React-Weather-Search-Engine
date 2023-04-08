@@ -78,7 +78,7 @@ export default function Weather(props) {
                     </a>{" "}
                     and is{" "}
                     <a
-                        href="#"
+                        href="https://github.com/Nataliia-Matvieiko/React-Weather-Search-Engine"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
