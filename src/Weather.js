@@ -86,7 +86,7 @@ export default function Weather(props) {
                     </a>{" "}
                     and{" "}
                     <a
-                        href="#"
+                        href="https://app.netlify.com/sites/super-salmiakki-c7f353/overview"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
