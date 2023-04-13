@@ -1,10 +1,11 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
 
 export default function Weather(props) {
-    const [weatherData, setWeatherData] = useState({ready: false});
+    const [weatherData, setWeatherData] = useState({ ready: false });
     const [city, setCity] = useState(props.defaultCity);
 
     function handleResponse(response) {
@@ -45,7 +46,7 @@ export default function Weather(props) {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <img src="/images/logo.png" className="logo" alt="SheCodes Logo"/>
+                    <img src="/images/logo.png" className="logo" alt="SheCodes Logo" />
                 </a>
                 <form onSubmit={handleSubmit}>
                     <div className="row">
@@ -66,19 +67,20 @@ export default function Weather(props) {
                         </div>
                     </div>
                 </form>
-                <WeatherInfo data={weatherData}/>
+                <WeatherInfo data={weatherData} />
+                <WeatherForecast coordinates={weatherData.coordinates} city={weatherData.city}/>
                 <footer>
                     This project was coded by{" "}
                     <a
-                        href="https://deluxe-sundae-cbfa48.netlify.app"
+                        href="https://www.shecodes.io/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        Nataliia Matvieiko
+                        SheCodes
                     </a>{" "}
                     and is{" "}
                     <a
-                        href="https://github.com/Nataliia-Matvieiko/React-Weather-Search-Engine"
+                        href="https://github.com/shecodesio/weather"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -86,7 +88,7 @@ export default function Weather(props) {
                     </a>{" "}
                     and{" "}
                     <a
-                        href="https://super-salmiakki-c7f353.netlify.app"
+                        href="https://shecodes-weather.netlify.app/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >

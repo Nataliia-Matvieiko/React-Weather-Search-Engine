@@ -1,54 +1,57 @@
 .Weather {
+    font-family: "Cerebri-Sans", Helvetica, Arial, sans-serif;
     background: white;
     border-radius: 16px;
     box-shadow: 0px 30px 50px rgba(65, 50, 100, 0.08);
-    color: rgb(135, 135, 135);
     padding: 40px;
+    color: rgb(135, 135, 135);
 }
 
 .Weather .logo {
-    display: block;
     max-width: 150px;
+    display: block;
 }
 
 .Weather form {
-    border-bottom: 1px solid #f9f7fe;
     margin-top: 40px;
+    border-bottom: 1px solid #f9f7fe;
     padding-bottom: 30px;
 }
 
 .Weather .search-input {
     background: #f9f7fe;
     border: none;
+    padding: 15px 20px;
+    display: inline-block;
     border-radius: 6px;
     color: rgba(39, 33, 66, 0.4);
-    display: inline-block;
     font-size: 16px;
     height: 50px;
     line-height: 20px;
-    padding: 15px 20px;
 }
 
 .Weather .btn {
     background: #885df1;
-    border: none;
-    font-size: 16px;
     font-weight: bold;
-    height: 50px;
+    font-size: 16px;
     padding: 15px 0;
+    border: none;
+    height: 50px;
 }
 
 .Weather .search-input::placeholder {
-    color: rgba(39, 33, 66, 0.4);
     line-height: 20px;
+    color: rgba(39, 33, 66, 0.4);
 }
 
 .Weather h1 {
-    color: #272142;
-    font-size: 38px;
-    font-weight: bold;
-    line-height: 48px;
     margin: 20px 0 10px 0;
+    line-height: 29px;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 48px;
+
+    color: #272142;
 }
 
 .Weather ul {
@@ -57,12 +60,12 @@
 }
 
 .Weather li {
+    font-weight: 500;
+    margin-bottom: 5px;
     color: rgba(39, 33, 66, 0.4);
     font-size: 16px;
-    font-weight: 500;
     line-height: 20px;
     list-style: none;
-    margin-bottom: 5px;
 }
 
 .Weather li strong {
@@ -71,11 +74,14 @@
 }
 
 .Weather .temperature {
+    font-weight: bold;
     color: rgb(33, 33, 33);
-    font-size: 80px;
+    margin-left: 5px;
     font-weight: 400;
-    line-height: 1;
     margin-left: 10px;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 1;
 }
 
 .Weather canvas {
@@ -85,18 +91,19 @@
 .Weather .unit {
     color: rgb(33, 33, 33);
     font-size: 28px;
+    line-height: 36px;
     font-weight: normal;
-    line-height: 1;
     position: relative;
+    line-height: 1;
     top: -34px;
 }
 
 .Weather footer {
-    color: rgba(39, 33, 66, 0.4);
     font-size: 14px;
-    line-height: 18px;
     margin-top: 40px;
+    line-height: 18px;
     text-align: center;
+    color: rgba(39, 33, 66, 0.4);
 }
 
 .Weather footer a {
